@@ -63,8 +63,13 @@ def show_madlib():
 
     adj_type = request.args.get("favadjective")
 
+    likes_fish = request.args.get("likes_fish")
+
+    votes = request.args.get("vote")
+    print votes
+
     return render_template("madlibs.html", color=color_type, 
-        noun=noun_type, person=text_name, adjective=adj_type)
+        noun=noun_type, person=text_name, adjective=adj_type, likes_fish=likes_fish, votes=votes)
 
 
 

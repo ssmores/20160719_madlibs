@@ -4,21 +4,24 @@
     <title></title>
 </head>
 <body>
-    <form action = '/madlib'>
-        What's your name?<input type= "text" name = "character"></input><br>
-        Color: 
-        <input type="radio" name="color_option">Blue</input>
-        <input type="radio" name="color_option">Red</input>
-        <input type="radio" name="color_option">Green</input><br>
+    <form action='/madlib'>
+        What's your name?<input type="text" name="character"></input><br>
+        Color:
+        <label><input type="radio" name="color_option" value="blue">Blue</input></label>
+        <label><input type="radio" name="color_option" value"red">Red</input></label>
+        <label><input type="radio" name="color_option" value="green">Green</input><br></label>
         Favorite noun:
         <input type="text" name="favnoun"></input><br>
         Favorite adjective:
         <select name="favadjective">
-            <option value = "hilarious">Hilarious</option>
-            <option value = "hungry">Hungry</option>
-            <option value = "special">Special</option>
+            <option value="hilarious">Hilarious</option>
+            <option value="hungry">Hungry</option>
+            <option value="special">Special</option>
         </select><br>
-
+        Do you like fish?
+        <input type="checkbox" name="likes_fish" value="fish">Yes!</input><br>
+        Do you vote?
+        <input type="checkbox" name="vote" value="does_vote">Yes (duh)</input><br>
         <input type="submit">
     </form>
 </body>

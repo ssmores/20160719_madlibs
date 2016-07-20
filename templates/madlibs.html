@@ -3,7 +3,29 @@
     <head>
     </head>
     <body>
-        There once was a {{ color }} {{ noun }} sitting in the Hackbright Lab. When {{ person }} went to pick it up, it burst into flames in a totally {{ adjective }} way.
+        There once was a {{ color }} {{ noun }} sitting in the Hackbright Lab. When {{ person }} went to pick it up, it burst into flames in a totally {{ adjective }} way. <br><br>
+
+        The {{ noun }} was off the chain. <br><br>
+
+        <b>Here are some interesting facts about {{ person }}:</b><br>
+        <ul>
+            <li>{{ person }}'s pants are {{ color }}.</li><br>
+            {% if likes_fish %} 
+                <li>{{ person }} likes fish! </li><br>
+            {% endif %}
+        
+        <li>{% if votes %} {{ person }} votes!</li>
+        <ul>
+            <li>{{ person }} is exercising their rights.</li>
+            <li>{{ person }} is totally {{ adjective }}</li>
+        </ul>
+        {% else %} {{ person }} doesn't vote but:
+        <ol>
+            <li>{{ person }} is not a voter, but {{ person }} is a hugger.</li>
+            <li>Go vote, you {{ adjective }} {{ person}}!</li>
+        </ol>
+        {% endif %}
+        </ul>
 
     </body>
 </html>
